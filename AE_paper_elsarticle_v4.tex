@@ -1,7 +1,7 @@
 % Exploratory v4 revision. Numerical claims map to eda/rebuild_v4 outputs.
 % Build from D:\AEpaper with xelatex twice; author metadata awaits confirmation.
 \documentclass[preprint,12pt]{elsarticle}
-\usepackage{amsmath,amssymb,booktabs,array,graphicx,placeins,float,url}
+\usepackage{amsmath,amssymb,booktabs,array,graphicx,placeins,float,url,hyperref}
 \journal{Applied Energy}
 \begin{document}
 \begin{frontmatter}
@@ -20,7 +20,7 @@ battery cycle life \sep cross-source validation \sep right censoring \sep surviv
 \end{frontmatter}
 
 \section{Introduction}
-Battery-life models are often evaluated within one measurement protocol. A model deployed on a different archive must also face differences in capacity definition, measurement frequency, chemistry, cycling policy, and censoring. Apparent accuracy can change when an isolated capacity drop is called an end-of-life (EOL) event or when only completed lifetimes are scored. Published early-life predictors and recent physics-informed and cross-domain models motivate a source-held-out evaluation \citep{severson2019,wang2024pin,tang2024ae,ledeng2026,zhu2026lake}. An auditable comparison needs a common prediction time, endpoint, and evaluation rule.
+Battery-life models are often evaluated within one measurement protocol. A model deployed on a different archive must also face differences in capacity definition, measurement frequency, chemistry, cycling policy, and censoring. Apparent accuracy can change when an isolated capacity drop is called an end-of-life (EOL) event or when only completed lifetimes are scored. Published early-life predictors, closed-loop battery optimization, recent limits on electrochemical data, and physics-informed and cross-domain models motivate a source-held-out evaluation \citep{severson2019,attia2020,attia2026,wang2024pin,tang2024ae,ledeng2026,zhu2026lake}. An auditable comparison needs a common prediction time, endpoint, and evaluation rule.
 
 We ask how source records, endpoint definitions, and censoring affect lifetime predictions across archives. Our contributions are (i) a traceable six-source corpus and endpoint audit; (ii) a landmark-consistent comparison of five survival approaches under source-only model selection; and (iii) paired analyses of source correction, endpoint sensitivity, within-source training, event-only regression, target-label budgets, and recalibration. This is a retrospective cell-level analysis. It does not establish prospective battery energy storage system control benefits.
 
@@ -136,7 +136,7 @@ The six sources differ in chemistry, cycling, temperature, record density and ob
 An audited six-source battery corpus supports a landmark-consistent, censoring-aware comparison but does not support a universal battery-life transfer claim. Five model families yield different winners by source; within-source fitting and event-only regression do not show a uniform advantage under the paired exploratory controls; endpoint and source-record choices shift results; and a simple target probability correction is not reliably beneficial across domains. An event-only 95\% finite-quantile count is rarely available under a random 20\% label budget and cannot certify coverage for censored cells. The result is a reproducible account of transfer limits and data-definition sensitivity, pending independent external and prospective validation.
 
 \section*{Data availability statement}
-The source archives remain with their original providers. The local reproducibility package contains processed tables, source-hash manifests, scripts, fold predictions, configurations, and v4 figures under \texttt{eda/rebuild\_v4}. No public repository or DOI has yet been assigned; these details must be completed before submission.
+The source archives remain with their original providers; provider access links are listed in the public repository. The public \href{https://github.com/whuaying/cross-dataset-battery-lifetime-prediction}{GitHub repository} provides analysis scripts, protocols, aggregate outputs, v4 figures, and the manuscript. Raw source files and row-level predictions are not redistributed. A permanent archive DOI has not yet been assigned.
 
 \section*{Declaration of competing interest}
 To be completed and approved by all authors before submission.
@@ -154,6 +154,12 @@ During the preparation of this work, ChatGPT/Codex was used to assist with prose
 
 \bibitem[Severson et~al.(2019)]{severson2019}
 Severson, K.~A., Attia, P.~M., Jin, N., Perkins, N., Jiang, B., Yang, Z., et~al. (2019). Data-driven prediction of battery cycle life before capacity degradation. \textit{Nature Energy}, \textit{4}(5), 383--391. \url{https://doi.org/10.1038/s41560-019-0356-8}
+
+\bibitem[Attia et~al.(2020)]{attia2020}
+Attia, P.~M., Grover, A., Jin, N., Severson, K.~A., Markov, T.~M., Liao, Y.-H., et~al. (2020). Closed-loop optimization of fast-charging protocols for batteries with machine learning. \textit{Nature}, \textit{578}(7795), 397--402. \url{https://doi.org/10.1038/s41586-020-1994-5}
+
+\bibitem[Attia et~al.(2026)]{attia2026}
+Attia, P.~M., Weng, A., \& Chueh, W.~C. (2026). Limits of electrochemical data for predicting battery lifetime and failure. \textit{Joule}, \textit{10}, 102423. \url{https://doi.org/10.1016/j.joule.2026.102423}
 
 \bibitem[Wang et~al.(2024)]{wang2024pin}
 Wang, F., Zhai, Z., Zhao, Z., Di, Y., \& Chen, X. (2024). Physics-informed neural network for lithium-ion battery degradation stable modeling and prognosis. \textit{Nature Communications}, \textit{15}, 4332. \url{https://doi.org/10.1038/s41467-024-48779-z}

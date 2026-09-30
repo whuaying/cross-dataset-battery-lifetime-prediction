@@ -12,8 +12,12 @@ HERE = Path(__file__).resolve().parent
 OUT = HERE.parent.parent / "figures_v4"
 OUT.mkdir(exist_ok=True)
 DOMAINS = ("MIT", "XJTU", "TJU", "NASA", "CALCE", "HUST")
-COLORS = {"km": "#7c868e", "xgb_aft": "#3973b9", "lognormal_aft": "#7b62a3",
-          "cox": "#c46d3d", "rsf": "#41977c"}
+# Colorblind-safe Okabe-Ito-inspired colors; labels and markers also identify series.
+COLORS = {"km": "#7f7f7f", "xgb_aft": "#0072B2", "lognormal_aft": "#CC79A7",
+          "cox": "#D55E00", "rsf": "#009E73"}
+DOMAIN_COLORS = {"MIT": "#0072B2", "XJTU": "#E69F00", "TJU": "#009E73",
+                 "NASA": "#56B4E9", "CALCE": "#D55E00", "HUST": "#CC79A7"}
+DOMAIN_MARKERS = {"MIT": "o", "XJTU": "s", "TJU": "^", "NASA": "D", "CALCE": "P", "HUST": "X"}
 
 
 def csv_rows(name: str) -> list[dict]:
@@ -43,20 +47,21 @@ def source_cohort() -> None:
         }
     y = np.arange(len(DOMAINS))
     fig, ax = plt.subplots(figsize=(7.4, 4.1))
-    labels = (("events", "Event after landmark", "#41977c"),
-              ("censored", "Right-censored", "#ddbb76"),
-              ("pre_eol", "EOL by landmark", "#c46d3d"),
-              ("no_followup", "No follow-up after landmark", "#7c868e"),
-              ("too_few", "Too few early records", "#a988ba"))
+    labels = (("events", "Event after landmark", "#009E73", ""),
+              ("censored", "Right-censored", "#E69F00", "///"),
+              ("pre_eol", "EOL by landmark", "#D55E00", "xx"),
+              ("no_followup", "No follow-up after landmark", "#7f7f7f", "..."),
+              ("too_few", "Too few early records", "#CC79A7", "\\\\"))
     left = np.zeros(len(DOMAINS))
-    for key, label, color in labels:
+    for key, label, color, hatch in labels:
         vals = np.array([counts[d][key] if key != "censored" else
                          counts[d]["eligible"] - counts[d]["events"] for d in DOMAINS])
-        ax.barh(y, vals, left=left, label=label, color=color, height=0.68)
+        ax.barh(y, vals, left=left, label=label, color=color, height=0.68,
+                hatch=hatch, edgecolor="white", linewidth=0.5)
         for i, value in enumerate(vals):
             if value >= 8:
                 ax.text(left[i] + value / 2, i, str(value), ha="center", va="center",
-                        fontsize=8, color="white" if color != "#ddbb76" else "#263645")
+                        fontsize=8, color="white" if color != "#E69F00" else "#263645")
         left += vals
     ax.set_yticks(y, DOMAINS)
     ax.invert_yaxis()
@@ -117,7 +122,8 @@ def endpoint() -> None:
                            key=lambda r: int(r["endpoint_records"]))
             ax.plot([int(r["endpoint_records"]) for r in group],
                     [float(r["common_grid_integrated_brier"]) for r in group],
-                    "o-", label=name, color=COLORS[model], linewidth=1.7, markersize=4)
+                    "s--" if model == "cox" else "o-", label=name, color=COLORS[model],
+                    linewidth=1.7, markersize=4)
         ax.set_xticks([1,3,5])
         ax.grid(alpha=0.2)
         if domain == "MIT":
@@ -171,7 +177,8 @@ def source_correction() -> None:
                 vals.append(float(pair["certified_v3"]["grid_integrated_brier"]) -
                             float(pair["before_source_correction"]["grid_integrated_brier"]))
         ax.bar(xpos + (j-0.5)*0.29, vals, width=0.27, label="XGBoost AFT" if j==0 else "Cox",
-               color=COLORS[model])
+               color=COLORS[model], hatch="" if j == 0 else "///",
+               edgecolor="black", linewidth=0.35)
     ax.axhline(0, color="0.3", linewidth=1)
     ax.set_xticks(xpos, DOMAINS)
     ax.set_ylabel("Certified minus historical-training integrated Brier")
@@ -185,14 +192,14 @@ def source_correction() -> None:
 def survival_calibration() -> None:
     records = [r for r in csv_rows("benchmark_horizons.csv") if r["landmark"] == "100" and
                r["model"] == "xgb_aft" and r["supported"] == "1"]
-    palette = dict(zip(DOMAINS, plt.get_cmap("tab10").colors))
     fig, ax = plt.subplots(figsize=(6.1, 5.5))
     ax.plot([0, 1], [0, 1], "--", color="0.4", linewidth=1, label="Equality")
     for domain in DOMAINS:
         group = [r for r in records if r["held_out_domain"] == domain]
         ax.scatter([float(r["mean_predicted_risk"]) for r in group],
                    [float(r["km_observed_risk"]) for r in group],
-                   color=palette[domain], s=35,
+                   color=DOMAIN_COLORS[domain], marker=DOMAIN_MARKERS[domain],
+                   edgecolor="black", linewidth=0.35, s=42,
                    label=f"{domain} ({len(group)} horizon{'s' if len(group) != 1 else ''})", alpha=0.8)
         for r in group:
             target = (domain, int(r["horizon_cycle"]))
