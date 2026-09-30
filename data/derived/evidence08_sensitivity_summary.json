@@ -1,0 +1,170 @@
+{
+  "TJU": {
+    "source_event_only_regression": {
+      "n_repetitions": 20,
+      "n_integrals": 20,
+      "score_min_max": [
+        0.13553173449382674,
+        0.15344375065144258
+      ],
+      "difference_min_max": [
+        -0.04590236928004013,
+        -0.02405401886725067
+      ],
+      "n_lower_brier_than_paired_source_aft": 20,
+      "interpretation": "overlapping cell partitions or training seeds; not independent replicates or a confidence interval"
+    },
+    "within_domain_aft": {
+      "n_repetitions": 10,
+      "n_integrals": 10,
+      "score_min_max": [
+        0.14829257074983077,
+        0.1669707154107282
+      ],
+      "difference_min_max": [
+        -0.041728467800553476,
+        -0.023050323139656048
+      ],
+      "n_lower_brier_than_paired_source_aft": 10,
+      "interpretation": "overlapping cell partitions or training seeds; not independent replicates or a confidence interval"
+    }
+  },
+  "CALCE": {
+    "within_domain_aft": {
+      "n_repetitions": 10,
+      "n_integrals": 10,
+      "score_min_max": [
+        0.08585602389737967,
+        0.09678555050877632
+      ],
+      "difference_min_max": [
+        -0.16860610313772773,
+        -0.15767657652633107
+      ],
+      "n_lower_brier_than_paired_source_aft": 10,
+      "interpretation": "overlapping cell partitions or training seeds; not independent replicates or a confidence interval"
+    },
+    "source_event_only_regression": {
+      "n_repetitions": 20,
+      "n_integrals": 20,
+      "score_min_max": [
+        0.23531867202701945,
+        0.3322894792581123
+      ],
+      "difference_min_max": [
+        -0.010667130094829058,
+        0.11762175500806593
+      ],
+      "n_lower_brier_than_paired_source_aft": 3,
+      "interpretation": "overlapping cell partitions or training seeds; not independent replicates or a confidence interval"
+    }
+  },
+  "HUST": {
+    "source_event_only_regression": {
+      "n_repetitions": 20,
+      "n_integrals": 20,
+      "score_min_max": [
+        0.42335213136453786,
+        0.45022322459008585
+      ],
+      "difference_min_max": [
+        0.3027310678733921,
+        0.33001407097893753
+      ],
+      "n_lower_brier_than_paired_source_aft": 0,
+      "interpretation": "overlapping cell partitions or training seeds; not independent replicates or a confidence interval"
+    },
+    "within_domain_aft": {
+      "n_repetitions": 10,
+      "n_integrals": 10,
+      "score_min_max": [
+        0.12083575347543604,
+        0.12385861368578989
+      ],
+      "difference_min_max": [
+        0.004141420077767299,
+        0.007164280288121147
+      ],
+      "n_lower_brier_than_paired_source_aft": 0,
+      "interpretation": "overlapping cell partitions or training seeds; not independent replicates or a confidence interval"
+    }
+  },
+  "XJTU": {
+    "source_event_only_regression": {
+      "n_repetitions": 20,
+      "n_integrals": 20,
+      "score_min_max": [
+        0.05949440592136084,
+        0.0660891576900589
+      ],
+      "difference_min_max": [
+        -0.004682907329641141,
+        0.007129333979873545
+      ],
+      "n_lower_brier_than_paired_source_aft": 4,
+      "interpretation": "overlapping cell partitions or training seeds; not independent replicates or a confidence interval"
+    },
+    "within_domain_aft": {
+      "n_repetitions": 10,
+      "n_integrals": 10,
+      "score_min_max": [
+        0.06885681354968264,
+        0.08656036535945329
+      ],
+      "difference_min_max": [
+        0.013792059292609182,
+        0.031495611102379834
+      ],
+      "n_lower_brier_than_paired_source_aft": 0,
+      "interpretation": "overlapping cell partitions or training seeds; not independent replicates or a confidence interval"
+    }
+  },
+  "MIT": {
+    "source_event_only_regression": {
+      "n_repetitions": 20,
+      "n_integrals": 20,
+      "score_min_max": [
+        0.13481588129144695,
+        0.1531123073111723
+      ],
+      "difference_min_max": [
+        -0.009661966385549309,
+        0.007941480430233572
+      ],
+      "n_lower_brier_than_paired_source_aft": 12,
+      "interpretation": "overlapping cell partitions or training seeds; not independent replicates or a confidence interval"
+    },
+    "within_domain_aft": {
+      "n_repetitions": 10,
+      "n_integrals": 10,
+      "score_min_max": [
+        0.05621754379820219,
+        0.061942838937870885
+      ],
+      "difference_min_max": [
+        -0.08892781303091196,
+        -0.08320251789124325
+      ],
+      "n_lower_brier_than_paired_source_aft": 10,
+      "interpretation": "overlapping cell partitions or training seeds; not independent replicates or a confidence interval"
+    }
+  },
+  "NASA": {
+    "source_event_only_regression": {
+      "n_repetitions": 20,
+      "n_integrals": 0,
+      "score_min_max": null,
+      "difference_min_max": null,
+      "n_lower_brier_than_paired_source_aft": 0,
+      "interpretation": "overlapping cell partitions or training seeds; not independent replicates or a confidence interval"
+    },
+    "within_domain_aft": {
+      "n_repetitions": 10,
+      "n_integrals": 0,
+      "score_min_max": null,
+      "difference_min_max": null,
+      "n_lower_brier_than_paired_source_aft": 0,
+      "interpretation": "overlapping cell partitions or training seeds; not independent replicates or a confidence interval"
+    }
+  }
+}

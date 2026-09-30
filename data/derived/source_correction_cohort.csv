@@ -1,0 +1,13 @@
+﻿landmark,held_out_domain,n_certified_cohort,n_common_cohort,n_excluded_by_raw_eligibility,n_changed_training_event_status,n_changed_training_event_time_or_censor,n_changed_feature_rows
+50,MIT,124,124,0,0,0,19
+50,XJTU,39,39,0,0,0,19
+50,TJU,119,119,0,0,0,0
+50,NASA,11,11,0,0,0,19
+50,CALCE,9,9,0,0,0,19
+50,HUST,77,77,0,0,0,19
+100,MIT,124,124,0,0,0,41
+100,XJTU,39,39,0,0,0,41
+100,TJU,119,119,0,0,0,0
+100,NASA,8,8,0,0,0,41
+100,CALCE,9,9,0,0,0,41
+100,HUST,77,77,0,0,0,41

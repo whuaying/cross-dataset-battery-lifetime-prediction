@@ -1,0 +1,456 @@
+{
+  "50": {
+    "MIT": {
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "aft_scale": 1.2,
+      "medape_min_max": [
+        82.66106625000647,
+        163.34903411012021
+      ],
+      "cindex_min_max": [
+        0.6167279411764706,
+        0.7697610294117647
+      ],
+      "ibs_min_max": [
+        0.1373045533751304,
+        0.15142443871902245
+      ],
+      "note": "fixed outer domain and source-selected configuration; seeds measure fitting variation, not test-sample CI"
+    },
+    "XJTU": {
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "aft_scale": 1.2,
+      "medape_min_max": [
+        47.21206789533212,
+        67.56186209660027
+      ],
+      "cindex_min_max": [
+        0.18061674008810572,
+        0.2555066079295154
+      ],
+      "ibs_min_max": [
+        0.1917548461426522,
+        0.3870243603907368
+      ],
+      "note": "fixed outer domain and source-selected configuration; seeds measure fitting variation, not test-sample CI"
+    },
+    "TJU": {
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "aft_scale": 2.0,
+      "medape_min_max": [
+        31.479352379520197,
+        52.83141962349348
+      ],
+      "cindex_min_max": [
+        0.4684300341296928,
+        0.5386803185437997
+      ],
+      "ibs_min_max": [
+        0.20621421535176815,
+        0.23055857015365383
+      ],
+      "note": "fixed outer domain and source-selected configuration; seeds measure fitting variation, not test-sample CI"
+    },
+    "NASA": {
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "aft_scale": 1.2,
+      "medape_min_max": [
+        323.61180778561436,
+        386.65205252237223
+      ],
+      "cindex_min_max": [
+        0.6923076923076923,
+        0.9615384615384616
+      ],
+      "ibs_min_max": null,
+      "note": "fixed outer domain and source-selected configuration; seeds measure fitting variation, not test-sample CI"
+    },
+    "CALCE": {
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "aft_scale": 1.2,
+      "medape_min_max": [
+        37.29267925638089,
+        60.60873166527422
+      ],
+      "cindex_min_max": [
+        0.6666666666666666,
+        0.8333333333333334
+      ],
+      "ibs_min_max": [
+        0.2957939080020903,
+        0.40113606438743316
+      ],
+      "note": "fixed outer domain and source-selected configuration; seeds measure fitting variation, not test-sample CI"
+    },
+    "HUST": {
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "aft_scale": 2.0,
+      "medape_min_max": [
+        35.172261088863316,
+        128.51518297713332
+      ],
+      "cindex_min_max": [
+        0.5868376068376069,
+        0.658974358974359
+      ],
+      "ibs_min_max": [
+        0.13271100252651782,
+        0.14116379935525877
+      ],
+      "note": "fixed outer domain and source-selected configuration; seeds measure fitting variation, not test-sample CI"
+    }
+  },
+  "100": {
+    "MIT": {
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "aft_scale": 1.2,
+      "medape_min_max": [
+        114.14597871162965,
+        218.46734751619294
+      ],
+      "cindex_min_max": [
+        0.34225643382352944,
+        0.7640165441176471
+      ],
+      "ibs_min_max": [
+        0.1423848700584163,
+        0.1477489977190134
+      ],
+      "note": "fixed outer domain and source-selected configuration; seeds measure fitting variation, not test-sample CI"
+    },
+    "XJTU": {
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "aft_scale": 1.2,
+      "medape_min_max": [
+        103.58609635042453,
+        231.9804274604857
+      ],
+      "cindex_min_max": [
+        0.3590308370044053,
+        0.4911894273127753
+      ],
+      "ibs_min_max": [
+        0.05506475425707345,
+        0.0666288103117325
+      ],
+      "note": "fixed outer domain and source-selected configuration; seeds measure fitting variation, not test-sample CI"
+    },
+    "TJU": {
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "aft_scale": 1.2,
+      "medape_min_max": [
+        38.75257738849333,
+        57.381658938612965
+      ],
+      "cindex_min_max": [
+        0.5263083048919226,
+        0.6535836177474402
+      ],
+      "ibs_min_max": [
+        0.1639881878410614,
+        0.19002103855038424
+      ],
+      "note": "fixed outer domain and source-selected configuration; seeds measure fitting variation, not test-sample CI"
+    },
+    "NASA": {
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "aft_scale": 0.6,
+      "medape_min_max": [
+        103.58057330498262,
+        268.29910478964365
+      ],
+      "cindex_min_max": [
+        0.3333333333333333,
+        0.8888888888888888
+      ],
+      "ibs_min_max": null,
+      "note": "fixed outer domain and source-selected configuration; seeds measure fitting variation, not test-sample CI"
+    },
+    "CALCE": {
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "aft_scale": 1.2,
+      "medape_min_max": [
+        34.47957010431697,
+        58.54554916814209
+      ],
+      "cindex_min_max": [
+        0.75,
+        0.8333333333333334
+      ],
+      "ibs_min_max": [
+        0.1777144244965212,
+        0.2916706290435675
+      ],
+      "note": "fixed outer domain and source-selected configuration; seeds measure fitting variation, not test-sample CI"
+    },
+    "HUST": {
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "aft_scale": 1.2,
+      "medape_min_max": [
+        20.33038924622153,
+        61.25113849688167
+      ],
+      "cindex_min_max": [
+        0.5393162393162393,
+        0.6702564102564103
+      ],
+      "ibs_min_max": [
+        0.1163253765049777,
+        0.1221636052741348
+      ],
+      "note": "fixed outer domain and source-selected configuration; seeds measure fitting variation, not test-sample CI"
+    }
+  }
+}

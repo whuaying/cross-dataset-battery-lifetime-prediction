@@ -1,0 +1,7 @@
+{
+  "historical_training_input": "D:\\AEpaper\\eda\\rebuild_v2\\cycle_diagnostic_corrected.csv",
+  "certified_training_input": "D:\\AEpaper\\eda\\rebuild_v2\\cycle_source_verified_v3.csv",
+  "target_reference": "fixed certified-v3 early features and three-record EOL on the common eligible cells",
+  "model_configuration": "source-selected from the v4 certified three-record benchmark, fixed in both branches",
+  "interpretation": "paired training-data correction audit; excluded-cell composition reported separately; not a causal decomposition"
+}

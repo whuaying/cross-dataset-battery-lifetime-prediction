@@ -1,0 +1,15 @@
+﻿landmark,domain,held_out_group,n_train,n_train_events,n_test,n_test_events,train_chemistries,test_chemistries
+50,XJTU,Batch-1,31,17,8,4,NCM532,NCM532
+50,XJTU,Batch-2,24,20,15,1,NCM532,NCM532
+50,XJTU,Batch-3,31,13,8,8,NCM532,NCM532
+50,XJTU,Batch-4,31,13,8,8,NCM532,NCM532
+50,TJU,Dataset_1_NCA_battery,63,33,56,42,NCM;NCM/NCA,NCA
+50,TJU,Dataset_2_NCM_battery,65,51,54,24,NCA;NCM/NCA,NCM
+50,TJU,Dataset_3_NCM_NCA_battery,110,66,9,9,NCA;NCM,NCM/NCA
+100,XJTU,Batch-1,31,17,8,4,NCM532,NCM532
+100,XJTU,Batch-2,24,20,15,1,NCM532,NCM532
+100,XJTU,Batch-3,31,13,8,8,NCM532,NCM532
+100,XJTU,Batch-4,31,13,8,8,NCM532,NCM532
+100,TJU,Dataset_1_NCA_battery,63,33,56,42,NCM;NCM/NCA,NCA
+100,TJU,Dataset_2_NCM_battery,65,51,54,24,NCA;NCM/NCA,NCM
+100,TJU,Dataset_3_NCM_NCA_battery,110,66,9,9,NCA;NCM,NCM/NCA

@@ -1,0 +1,47 @@
+{
+  "status": "post-v4 exploratory evidence; not preregistered",
+  "landmarks": [
+    50,
+    100
+  ],
+  "domains": [
+    "MIT",
+    "XJTU",
+    "TJU",
+    "NASA",
+    "CALCE",
+    "HUST"
+  ],
+  "feature_set": [
+    "q0_Ah",
+    "soh_last",
+    "slope_1e3",
+    "drop10",
+    "drop_half",
+    "std_soh",
+    "n_regen",
+    "regen_max"
+  ],
+  "endpoint": "first of three consecutive valid observed SOH <= 0.8",
+  "source_aft": "frozen v4 source-held-out XGBoost AFT cell predictions",
+  "within_domain_aft": "stratified 3- or 5-fold target-cell out-of-fold XGBoost AFT",
+  "within_domain_hyperparameter": "same scale selected without target labels for source AFT",
+  "event_only": "source-domain observed events only, XGBoost reg:squarederror on log residual lifetime",
+  "event_only_risk_distribution": "lognormal proxy using the paired source AFT sigma, not separately calibrated",
+  "xgboost_budget": {
+    "rounds": 300,
+    "max_depth": 4,
+    "eta": 0.05,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "lambda": 1.0
+  },
+  "in_domain_label_access": "other target folds supply event and censor labels; zero-shot source AFT has no target labels",
+  "score": "same held-out cells and target censoring weights per domain; domain-specific supported absolute horizons",
+  "small_source_warning": "NASA and CALCE out-of-fold fits use 5-7 in-domain training cells and are descriptive only",
+  "input_sha256": {
+    "protocol_v4.json": "57cd3a8b16866937dc76a628c1c40214f8e755a75b25ea0feb2a06c7f1aa55b2",
+    "benchmark_metrics.csv": "401e4abd6ed24b58b1e6b39139b689b5a9737b9628ac49d1d7496e91d2472d2f",
+    "benchmark_predictions.csv": "590d518d107d755db8dd13bf5e270a9532481d8820f4648f59b984c652063483"
+  }
+}

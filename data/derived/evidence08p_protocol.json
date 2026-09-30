@@ -1,0 +1,17 @@
+{
+  "status": "exploratory; groups come from verified-v3 protocol field",
+  "domains": [
+    "XJTU",
+    "TJU"
+  ],
+  "landmarks": [
+    50,
+    100
+  ],
+  "XJTU_groups": "Batch-1 through Batch-4; operational Batch-5/6 lack landmark diagnostic density",
+  "TJU_groups": "Dataset_1_NCA, Dataset_2_NCM, Dataset_3_NCM_NCA; protocol and chemistry confounded",
+  "train": "all other groups of the target source; cell-level labels available only in these groups",
+  "test": "one held-out group; all group predictions pooled for source-level paired scoring",
+  "model": "residual-life XGBoost AFT with source-only selected scale and frozen v4 features/rounds",
+  "interpretation": "not an isolated protocol causal effect; MIT/HUST lack usable group metadata and NASA is too small"
+}

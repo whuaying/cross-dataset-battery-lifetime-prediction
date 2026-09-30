@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    0.25,
+    0.5,
+    1.0
+  ],
+  "source_draws_per_validation_domain": 10,
+  "budget_fraction": 0.2,
+  "selection_metric": "mean right-censored NLL across five source validation domains and fixed random draws",
+  "outer_target_outcomes_used": false,
+  "selected_prior_log_sd": {
+    "50": {
+      "MIT": 1.0,
+      "XJTU": 1.0,
+      "TJU": 1.0,
+      "NASA": 0.25,
+      "CALCE": 1.0,
+      "HUST": 1.0
+    },
+    "100": {
+      "MIT": 1.0,
+      "XJTU": 1.0,
+      "TJU": 1.0,
+      "NASA": 1.0,
+      "CALCE": 1.0,
+      "HUST": 1.0
+    }
+  },
+  "note": "source-only hyperparameter selection, not a prospective deployment validation"
+}

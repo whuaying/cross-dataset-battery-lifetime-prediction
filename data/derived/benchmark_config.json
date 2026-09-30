@@ -1,0 +1,30 @@
+{
+  "protocol": "protocol_v4.json",
+  "model_candidates": {
+    "xgb_aft": [
+      0.3,
+      0.6,
+      1.2,
+      2.0
+    ],
+    "lognormal_aft": [
+      0.1,
+      1.0,
+      10.0
+    ],
+    "cox": [
+      0.1,
+      1.0,
+      10.0
+    ],
+    "rsf": [
+      3,
+      8
+    ]
+  },
+  "xgb_boost_rounds": 300,
+  "rsf_trees": 100,
+  "source_selection_score": "NLL for parametric AFT; supported Brier for Cox/RSF",
+  "target_outcomes_used_for_selection": false,
+  "note": "model-specific unsupported horizons are NA; cross-model paired comparisons require common supported grid"
+}

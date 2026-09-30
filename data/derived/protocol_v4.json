@@ -1,0 +1,92 @@
+{
+  "status": "exploratory revision protocol fixed before v4 model fitting; not historically preregistered",
+  "unit": "cell",
+  "primary_landmark": 100,
+  "secondary_landmark": 50,
+  "domains": [
+    "MIT",
+    "XJTU",
+    "TJU",
+    "NASA",
+    "CALCE",
+    "HUST"
+  ],
+  "landmarks": [
+    50,
+    100
+  ],
+  "horizons_absolute_cycle": [
+    125,
+    250,
+    500,
+    750,
+    1000,
+    1500,
+    2000
+  ],
+  "endpoint": "first of three consecutive valid observed SOH <= 0.8",
+  "event_time_model": "residual time R=T-L in the cohort event-free at landmark L",
+  "source_selection": "inner leave-one-source-out among the five source domains only",
+  "model_features": [
+    "q0_Ah",
+    "soh_last",
+    "slope_1e3",
+    "drop10",
+    "drop_half",
+    "std_soh",
+    "n_regen",
+    "regen_max"
+  ],
+  "feature_revision_reason": "drop_landmark equals 1-soh_last exactly; removed the redundant column before final v4 fit",
+  "target_budget_rule": "ceil(p*n) with no minimum four-cell override",
+  "target_budget_fractions": [
+    0.1,
+    0.2,
+    0.4
+  ],
+  "target_sampling_main": "simple random cells without replacement; no event stratification",
+  "target_sampling_sensitivity": "event-stratified retrospective draws, separately labelled",
+  "shift_prior_candidates": [
+    0.25,
+    0.5,
+    1.0
+  ],
+  "shift_prior_selection": "source-only inner validation with random 20% source calibration draws and censored NLL",
+  "scale_candidates": [
+    0.3,
+    0.6,
+    1.2,
+    2.0
+  ],
+  "training_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "conformal_alpha": 0.05,
+  "min_event_residuals_for_finite_quantile": 19,
+  "conformal_scope": "event-residual count feasibility only, not censor-aware all-cell coverage",
+  "input_sha256": {
+    "cycle_source_verified_v3.csv": "e875afa46c42abd74dcb14b416ccc04b07531219f048560b0907bbabce900fc4",
+    "landmark_50_features.csv": "48da3f5f677f28e7474819dc356d2b0b519b472dcf7f002bc79350725c837835",
+    "landmark_100_features.csv": "235968a5296482c19fb0ce832b33bd23397021201ec92751956eca9d3890b310"
+  },
+  "legacy_v3": "eda/rebuild_v2 remains unchanged as a historical audit"
+}

@@ -1,0 +1,168 @@
+{
+  "50": {
+    "MIT": {
+      "prior_log_shift_sd": 1.0,
+      "n_training_seeds": 20,
+      "n_overlapping_target_draws_per_seed": 30,
+      "n_supported_paired_brier": 600,
+      "fraction_of_supported_seed_draw_pairs_improved": 0.625,
+      "mean_paired_brier_difference": -0.0020381054067691237,
+      "per_seed_mean_difference_min_max": [
+        -0.011594429673317018,
+        0.003686750724864107
+      ],
+      "n_seed_means_improved": 12,
+      "note": "overlapping target draws and common cells; descriptive sensitivity, not independent inferential replicates"
+    },
+    "XJTU": {
+      "prior_log_shift_sd": 1.0,
+      "n_training_seeds": 20,
+      "n_overlapping_target_draws_per_seed": 30,
+      "n_supported_paired_brier": 600,
+      "fraction_of_supported_seed_draw_pairs_improved": 1.0,
+      "mean_paired_brier_difference": -0.1438415023277464,
+      "per_seed_mean_difference_min_max": [
+        -0.21403726317527713,
+        -0.060955420298453356
+      ],
+      "n_seed_means_improved": 20,
+      "note": "overlapping target draws and common cells; descriptive sensitivity, not independent inferential replicates"
+    },
+    "TJU": {
+      "prior_log_shift_sd": 1.0,
+      "n_training_seeds": 20,
+      "n_overlapping_target_draws_per_seed": 30,
+      "n_supported_paired_brier": 600,
+      "fraction_of_supported_seed_draw_pairs_improved": 0.22833333333333333,
+      "mean_paired_brier_difference": 0.010890115262195696,
+      "per_seed_mean_difference_min_max": [
+        0.00592275201265382,
+        0.01480792380030319
+      ],
+      "n_seed_means_improved": 0,
+      "note": "overlapping target draws and common cells; descriptive sensitivity, not independent inferential replicates"
+    },
+    "NASA": {
+      "prior_log_shift_sd": 0.25,
+      "n_training_seeds": 20,
+      "n_overlapping_target_draws_per_seed": 30,
+      "n_supported_paired_brier": 0,
+      "fraction_of_supported_seed_draw_pairs_improved": null,
+      "mean_paired_brier_difference": null,
+      "per_seed_mean_difference_min_max": null,
+      "n_seed_means_improved": 0,
+      "note": "overlapping target draws and common cells; descriptive sensitivity, not independent inferential replicates"
+    },
+    "CALCE": {
+      "prior_log_shift_sd": 1.0,
+      "n_training_seeds": 20,
+      "n_overlapping_target_draws_per_seed": 30,
+      "n_supported_paired_brier": 600,
+      "fraction_of_supported_seed_draw_pairs_improved": 1.0,
+      "mean_paired_brier_difference": -0.13821052156815622,
+      "per_seed_mean_difference_min_max": [
+        -0.18744953321717334,
+        -0.10025110942024554
+      ],
+      "n_seed_means_improved": 20,
+      "note": "overlapping target draws and common cells; descriptive sensitivity, not independent inferential replicates"
+    },
+    "HUST": {
+      "prior_log_shift_sd": 1.0,
+      "n_training_seeds": 20,
+      "n_overlapping_target_draws_per_seed": 30,
+      "n_supported_paired_brier": 600,
+      "fraction_of_supported_seed_draw_pairs_improved": 0.0,
+      "mean_paired_brier_difference": 0.015645209437769498,
+      "per_seed_mean_difference_min_max": [
+        0.010975282036657185,
+        0.01789236601386925
+      ],
+      "n_seed_means_improved": 0,
+      "note": "overlapping target draws and common cells; descriptive sensitivity, not independent inferential replicates"
+    }
+  },
+  "100": {
+    "MIT": {
+      "prior_log_shift_sd": 1.0,
+      "n_training_seeds": 20,
+      "n_overlapping_target_draws_per_seed": 30,
+      "n_supported_paired_brier": 600,
+      "fraction_of_supported_seed_draw_pairs_improved": 0.31666666666666665,
+      "mean_paired_brier_difference": 0.0031193140615678894,
+      "per_seed_mean_difference_min_max": [
+        -0.003587331220350347,
+        0.004727571928469833
+      ],
+      "n_seed_means_improved": 2,
+      "note": "overlapping target draws and common cells; descriptive sensitivity, not independent inferential replicates"
+    },
+    "XJTU": {
+      "prior_log_shift_sd": 1.0,
+      "n_training_seeds": 20,
+      "n_overlapping_target_draws_per_seed": 30,
+      "n_supported_paired_brier": 600,
+      "fraction_of_supported_seed_draw_pairs_improved": 0.16666666666666666,
+      "mean_paired_brier_difference": 0.007567298259471987,
+      "per_seed_mean_difference_min_max": [
+        0.004555416045566473,
+        0.011666377163228221
+      ],
+      "n_seed_means_improved": 0,
+      "note": "overlapping target draws and common cells; descriptive sensitivity, not independent inferential replicates"
+    },
+    "TJU": {
+      "prior_log_shift_sd": 1.0,
+      "n_training_seeds": 20,
+      "n_overlapping_target_draws_per_seed": 30,
+      "n_supported_paired_brier": 600,
+      "fraction_of_supported_seed_draw_pairs_improved": 0.535,
+      "mean_paired_brier_difference": 0.003976395945993309,
+      "per_seed_mean_difference_min_max": [
+        -0.009154325611885818,
+        0.010851572854820453
+      ],
+      "n_seed_means_improved": 3,
+      "note": "overlapping target draws and common cells; descriptive sensitivity, not independent inferential replicates"
+    },
+    "NASA": {
+      "prior_log_shift_sd": 1.0,
+      "n_training_seeds": 20,
+      "n_overlapping_target_draws_per_seed": 30,
+      "n_supported_paired_brier": 0,
+      "fraction_of_supported_seed_draw_pairs_improved": null,
+      "mean_paired_brier_difference": null,
+      "per_seed_mean_difference_min_max": null,
+      "n_seed_means_improved": 0,
+      "note": "overlapping target draws and common cells; descriptive sensitivity, not independent inferential replicates"
+    },
+    "CALCE": {
+      "prior_log_shift_sd": 1.0,
+      "n_training_seeds": 20,
+      "n_overlapping_target_draws_per_seed": 30,
+      "n_supported_paired_brier": 600,
+      "fraction_of_supported_seed_draw_pairs_improved": 0.955,
+      "mean_paired_brier_difference": -0.07572314129921098,
+      "per_seed_mean_difference_min_max": [
+        -0.11294435543714408,
+        -0.04034481331874975
+      ],
+      "n_seed_means_improved": 20,
+      "note": "overlapping target draws and common cells; descriptive sensitivity, not independent inferential replicates"
+    },
+    "HUST": {
+      "prior_log_shift_sd": 1.0,
+      "n_training_seeds": 20,
+      "n_overlapping_target_draws_per_seed": 30,
+      "n_supported_paired_brier": 600,
+      "fraction_of_supported_seed_draw_pairs_improved": 0.005,
+      "mean_paired_brier_difference": 0.00788122940646636,
+      "per_seed_mean_difference_min_max": [
+        0.0062895544637660925,
+        0.008905789635351578
+      ],
+      "n_seed_means_improved": 0,
+      "note": "overlapping target draws and common cells; descriptive sensitivity, not independent inferential replicates"
+    }
+  }
+}

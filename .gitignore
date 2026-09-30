@@ -1,0 +1,8 @@
+# Do not commit downloaded source archives or row-level exports.
+*.mat
+*.xlsx
+*.zip
+raw/
+source_data/
+*_predictions.csv
+*_membership.csv

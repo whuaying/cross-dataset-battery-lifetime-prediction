@@ -1,0 +1,15 @@
+{
+  "input": "v3 endpoint labels and cycle-50/100 features",
+  "common_cohort": "v3 landmark-eligible cells with raw one-record EOL after landmark",
+  "models": [
+    "xgb_aft",
+    "cox"
+  ],
+  "hyperparameters": "source-only configurations selected for the three-record v4 benchmark, frozen across endpoint variants",
+  "endpoint_rules": {
+    "1": "raw_first_crossing",
+    "3": "sustained_3",
+    "5": "sustained_5"
+  },
+  "interpretation": "different rules define different outcomes; model ranking and support sensitivity only"
+}

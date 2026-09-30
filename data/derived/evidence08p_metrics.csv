@@ -1,0 +1,9 @@
+﻿landmark,domain,arm,n_target,n_events,n_groups,n_supported_horizons,first_supported_horizon,last_supported_horizon,grid_integrated_brier
+50,XJTU,within_source_held_protocol,39,21,4,3,125,500,0.07860861913155102
+50,XJTU,source_held_out,39,21,4,3,125,500,0.3870243603907368
+50,TJU,within_source_held_protocol,119,75,3,5,125,1000,0.28922594530267115
+50,TJU,source_held_out,119,75,3,5,125,1000,0.2215097982724364
+100,XJTU,within_source_held_protocol,39,21,4,3,125,500,0.05762385994339223
+100,XJTU,source_held_out,39,21,4,3,125,500,0.05506475425707345
+100,TJU,within_source_held_protocol,119,75,3,5,125,1000,0.24658750359268916
+100,TJU,source_held_out,119,75,3,5,125,1000,0.19002103855038424
